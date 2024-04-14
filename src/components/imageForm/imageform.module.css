@@ -1,0 +1,245 @@
+.imageListTop {
+    display: flex;
+    align-items: center;
+}
+
+.imageListTop img{
+    width: 40%;
+}
+
+.imageListTop span{
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0,0,0,.24);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    vertical-align: middle;
+    aspect-ratio: 1;
+}
+
+.heading h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.heading{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBtn{
+    width: 30px;
+    /* height: 90%; */
+}
+
+.crossBtn {
+    width: 30px;
+    cursor: pointer;
+}
+
+.imageList_image{
+    box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+.imageList_image img{
+    height:80%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.imageList_update{
+    right:30px
+}
+.imageList_delete{
+    right: -10px;
+}
+
+.imageList_update img{
+    width: 35px;
+}
+
+.imageList_delete img{
+    width: 35px;
+    
+}
+
+.imageList_delete,.imageList_update{
+    position: absolute;
+    top:-15px;
+    transition: .3s;
+    display: none;
+}
+
+.imageList_image:hover .imageList_delete{
+    display: block;
+}
+
+.imageList_image:hover .imageList_update{
+    display: block;
+}
+
+#imageForm_container{
+    /* width: 100%; */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+#imageForm_container span{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+#imageForm_container form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+#imageForm_container input{
+    width: 100%;
+}
+
+
+
+
+#imageForm_actions button{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#imageForm_actions {
+    display: flex;
+    gap:30px;
+}
+
+.imageList_image>img{
+    height:200px
+}
+
+
+/* black background */
+.lightbox-overlay {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    height: auto;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+/* container */
+.lightbox-container {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+/* close button of lightbox to hide image */
+.close-button{
+    position: absolute;
+    top: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    left: 90%;
+  }
+
+  .download-button{
+    position: absolute;
+    top: 10px;
+    /* padding: 5px 10px; */
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    left: 80%;
+  }
+  
+  /* image inside the lightbox */
+  .lightbox-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10 auto;
+  }
+  
+
+  .carouselElement {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    gap: 30px;
+    inset: 0;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+
+  }
+
+
+.carouselElement button {
+    align-items: center;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 800;
+    justify-content: center;
+    outline: none;
+    transition: .3s;
+    width: 60px;
+    padding: 10px
+}
+
+.carouselElement img{
+    height: 80vh;
+    object-fit: cover;
+    width: 60vw;
+}
+
+.imageList_search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+}
+
+@media only screen and (min-width: 600px) {
+    .imageList_search{
+        margin-left: auto;
+    }
+}
+
+.imageList_search input{
+    font-size: 1.1rem;
+    font-weight: 300;
+    outline: none;
+    padding: 5px 5px 5px 10px;
+}

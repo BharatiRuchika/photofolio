@@ -1,0 +1,76 @@
+.albumsHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.albumsHeader h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.albumsHeader button {
+    background-color: rgba(0, 119, 255, .1);
+    border: 2px solid #07f;
+    border-radius: 5px;
+    color: #07f;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.albumsHeader .cancel {
+    background-color: rgb(255,234,231);
+    color:rgb(254,20,1);
+    border: 2px solid rgb(254,20,1);
+    font-weight: 700;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.album {
+    align-items: center;
+    border: 5px solid #eee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    margin-block: 30px;
+    transition: border-color .3s;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.album img{
+    margin-bottom: 30px;
+    width: 50px;
+}
+
+
+.album span{
+    background-color: #eee;
+    font-size: 1.1rem;
+    font-weight: 700;
+    justify-self: baseline;
+    padding-block: 5px;
+    text-align: center;
+    transition: .3s;
+    width: 100%;
+}
+
+
+
+.album:hover > span {
+    background-color: rgb(2,119,255)
+}
+
+.album:hover  {
+    border-color: rgb(2,119,255);
+    color:white
+}
+
